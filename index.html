@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WDD 131 – Dynamic Web Fundamentals – Vitor Barros</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Vitor Monteiro de Barros, web development, HTML, CSS, JavaScript" />
+  <meta name="author" content="Vitor Monteiro de Barros" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/base.css" />
+  <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="title-bar">
+    <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+  </div>
+
+  <nav class="nav-bar" aria-label="Primary">
+    <a href="https://www.linkedin.com/in/vitor-monteiro-de-barros" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">I-Learn</a>
+    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">Scripture</a>
+    <a href="project/">Final Project</a>
+  </nav>
+</header>
+
+<main class="page">
+  <h1 class="page-title">Vitor Monteiro de Barros</h1>
+
+  <section class="grid" aria-label="Main content">
+    <!-- LEFT COLUMN -->
+    <div class="card">
+      <div class="card-head">About Me</div>
+
+      <div class="card-body about">
+        <div class="about-text">
+          <p class="lead">
+            Building the future of software with AI agents. I specialize in developing real-world applications powered by
+            Large Language Models (LLMs) and custom AI agents that automate and transform how companies operate.
+          </p>
+
+          <p>
+            I’m an IT professional with 10+ years of experience developing high-performance systems across diverse industries.
+            In recent years, I’ve focused on artificial intelligence—particularly LLMs, autonomous agents, and
+            Retrieval-Augmented Generation (RAG) systems.
+          </p>
+
+          <p>
+            My stack includes JavaScript/TypeScript, Node.js, Go (Golang), Python, React, React Native, PostgreSQL, MongoDB,
+            ElasticSearch, Docker, AWS and GCP.
+          </p>
+        </div>
+
+        <img class="portrait" src="images/portrait.jpg" alt="Portrait of Vitor Monteiro de Barros" />
+      </div>
+
+      <h2 class="subheading">São Paulo, Brazil</h2>
+      <div class="divider"></div>
+
+      <div class="card-body hometown">
+        <figure class="flag">
+          <img src="images/brazil-flag.png" alt="Official flag of Brazil" />
+          <figcaption>Official Flag of Brazil</figcaption>
+        </figure>
+
+        <div class="hometown-text">
+          <p>
+            São Paulo is the largest city in Brazil and one of the most influential hubs in Latin America. It’s known for its
+            energy, culture, and strong tech ecosystem—an environment that constantly pushes innovation in software and startups.
+          </p>
+          <p>
+            I’m based in Brazil and work across product, engineering leadership, and AI solutions—building systems that ship to
+            production and solve real business problems.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <aside class="card">
+      <div class="card-head">Web Dev Resources</div>
+
+      <div class="card-body resources">
+        <ul>
+          <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+          <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+          <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a></li>
+          <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Smashing Magazine</a></li>
+          <li><a href="https://dev.to/" target="_blank" rel="noopener">Dev.to Community</a></li>
+          <li><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a></li>
+        </ul>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="footer-line">
+    &copy; <span id="currentyear"></span> <span class="footer-name">Vitor Monteiro de Barros</span> <span class="dot">•</span> Brazil
+  </p>
+  <p class="lastmod">Last Modification: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
