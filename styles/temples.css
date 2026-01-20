@@ -1,0 +1,170 @@
+/* styles/temples.css */
+
+/* --------- Base reset --------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --purple: #3b0a57;
+  --purple-2: #2d063f;
+  --text: #111;
+  --caption: #4b0082;
+  --max: 1100px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans 3", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: #fff;
+}
+
+/* --------- Header --------- */
+.site-header {
+  background: var(--purple);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 18px;
+}
+
+.brand {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: 0.2px;
+}
+
+/* Hamburger button (icon-only look, keeps accessible text) */
+.menu-toggle {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: transparent; /* hide "Menu" text visually */
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* 3 bars */
+.menu-toggle::before,
+.menu-toggle::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.menu-toggle::before {
+  top: 14px;
+  box-shadow: 0 8px 0 #fff, 0 16px 0 #fff; /* middle + bottom bars */
+}
+
+.menu-toggle::after {
+  display: none; /* not needed because box-shadow draws all 3 */
+}
+
+.menu-toggle:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+/* Mobile nav is hidden by default */
+.nav-menu {
+  display: none;
+}
+
+/* When opened on mobile */
+.nav-menu.open {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  background: var(--purple-2);
+  padding: 12px 18px 16px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus-visible {
+  text-decoration: underline;
+}
+
+/* --------- Main layout --------- */
+.page {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 18px 14px 32px;
+}
+
+h1 {
+  text-align: center;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin: 18px 0 22px;
+}
+
+/* Album - single column on mobile */
+.album {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+  justify-items: center;
+}
+
+.album figure {
+  margin: 0;
+  width: min(92vw, 560px);
+}
+
+.album img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.album figcaption {
+  text-align: center;
+  color: var(--caption);
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+/* --------- Footer --------- */
+.site-footer {
+  background: var(--purple);
+  color: #fff;
+  text-align: center;
+  padding: 18px 14px 20px;
+}
+
+.footer-line {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.lastmod {
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+}

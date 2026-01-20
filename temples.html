@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temple Album</title>
+  <meta name="description" content="A responsive temple photo album with a mobile hamburger menu." />
+  <meta name="author" content="Vitor Monteiro de Barros" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/temples.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" />
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">Temple Album</div>
+
+  <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+    Menu
+  </button>
+
+  <nav class="nav-menu" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="#old">Old</a>
+    <a href="#new">New</a>
+    <a href="#large">Large</a>
+    <a href="#small">Small</a>
+  </nav>
+</header>
+
+<main class="page">
+  <h1>Home</h1>
+
+  <section class="album" aria-label="Temple photo album">
+    <figure>
+      <img src="images/campinas-temple.jpeg" alt="Campinas Temple" loading="lazy" width="400" height="250" />
+      <figcaption>Salt Lake City Temple</figcaption>
+    </figure>
+    <figure>
+      <img src="images/campinas-temple.jpeg" alt="Campinas Temple" loading="lazy" width="400" height="250" />
+      <figcaption>Provo City Center Temple</figcaption>
+    </figure>
+    <figure>
+      <img src="images/campinas-temple.jpeg" alt="Campinas Temple" loading="lazy" width="400" height="250" />
+      <figcaption>San Diego California Temple</figcaption>
+    </figure>
+    <figure>
+      <img src="images/campinas-temple.jpeg" alt="Campinas Temple" loading="lazy" width="400" height="250" />
+      <figcaption>Rome Italy Temple</figcaption>
+    </figure>
+    <figure>
+      <img src="images/campinas-temple.jpeg" alt="Campinas Temple" loading="lazy" width="400" height="250" />
+      <figcaption>Buenos Aires Argentina Temple</figcaption>
+    </figure>
+    <figure>
+      <img src="images/campinas-temple.jpeg" alt="Campinas Temple" loading="lazy" width="400" height="250" />
+      <figcaption>Manila Philippines Temple</figcaption>
+    </figure>
+    <figure>
+      <img src="images/campinas-temple.jpeg" alt="Campinas Temple" loading="lazy" width="400" height="250" />
+      <figcaption>Paris France Temple</figcaption>
+    </figure>
+    <figure>
+      <img src="images/campinas-temple.jpeg" alt="Campinas Temple" loading="lazy" width="400" height="250" />
+      <figcaption>Accra Ghana Temple</figcaption>
+    </figure>
+    <figure>
+      <img src="images/campinas-temple.jpeg" alt="Campinas Temple" loading="lazy" width="400" height="250" />
+      <figcaption>Sao Paulo Brazil Temple</figcaption>
+    </figure>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="footer-line">
+    &copy; <span id="currentyear"></span> <span class="footer-name">Vitor Monteiro de Barros</span> <span class="dot">•</span> Brazil
+  </p>
+  <p class="lastmod">Last Modification: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
