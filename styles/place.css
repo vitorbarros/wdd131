@@ -7,7 +7,7 @@
   --surface: #ffffff;
   --border: #e6e8eb;
 
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --shadow: 0 10px 30px #0000001f;
   --radius: 14px;
 
   --font-serif: "Cormorant Garamond", serif;
@@ -170,7 +170,7 @@ body {
     transform: translateY(-50%);
     width: min(340px, 32%);
     padding: 1.1rem;
-    background: rgba(255, 255, 255, 0.92);
+    background: #ffffffeb;
     backdrop-filter: blur(6px);
   }
 
@@ -180,5 +180,15 @@ body {
 
   .weather-card {
     right: 1.25rem;
+  }
+
+  .weather-icon {
+    display: none;
+  }
+
+  .weather-title::after {
+    content: "⛅";
+    margin-left: 0.5rem;
+    font-size: 1.4rem;
   }
 }
