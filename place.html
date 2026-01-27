@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kyoto, Japan | Country Page</title>
+  <meta name="description" content="Explore Kyoto, Japan with quick facts, weather, and a responsive hero image." />
+  <meta name="author" content="Vitor Monteiro de Barros" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <p class="eyebrow">Country Page</p>
+  <h1 class="place-title">Kyoto, Japan</h1>
+  <p class="tagline">Tradition, temples, and tranquil streets.</p>
+</header>
+
+<main class="page">
+  <!-- “Stage” = hero + overlay cards on desktop, stacked on mobile -->
+  <section class="stage" aria-label="Kyoto image, facts, and weather">
+    <div class="hero" aria-label="Kyoto skyline at sunrise">
+      <picture>
+        <source media="(min-width: 700px)" srcset="images/kyoto-large.webp" />
+        <img
+                src="images/kyoto-small.webp"
+                alt="Stylized view of Kyoto at sunrise"
+                width="640"
+                height="426"
+                loading="lazy"
+        />
+      </picture>
+    </div>
+
+    <section class="card data-card" aria-label="Kyoto facts">
+      <h2 class="section-title">Data</h2>
+      <dl class="facts">
+        <div><dt>Country</dt><dd>Japan</dd></div>
+        <div><dt>Region</dt><dd>Kansai</dd></div>
+        <div><dt>Known for</dt><dd>Historic temples and gardens</dd></div>
+        <div><dt>Language</dt><dd>Japanese</dd></div>
+        <div><dt>Currency</dt><dd>Japanese Yen (JPY)</dd></div>
+        <div><dt>Time zone</dt><dd>JST (UTC+9)</dd></div>
+      </dl>
+    </section>
+
+    <section class="card weather-card" aria-label="Kyoto weather">
+      <h2 class="section-title weather-title">
+        Weather
+        <img class="weather-icon" src="images/weather.svg" alt="Partly cloudy" width="40" height="40" />
+      </h2>
+      <dl class="facts">
+        <div><dt>Temperature</dt><dd><span id="temperature">6</span>&deg;C</dd></div>
+        <div><dt>Conditions</dt><dd>Partly Cloudy</dd></div>
+        <div><dt>Wind</dt><dd><span id="windspeed">15</span> km/h</dd></div>
+        <div><dt>Wind Chill</dt><dd><span id="windchill">--</span></dd></div>
+      </dl>
+    </section>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="currentyear"></span> Vitor Monteiro de Barros • Japan</p>
+  <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>

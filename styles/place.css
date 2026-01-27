@@ -1,0 +1,184 @@
+:root {
+  --max: 1100px;
+  --pad: 1rem;
+
+  --ink: #101418;
+  --muted: #5b6470;
+  --surface: #ffffff;
+  --border: #e6e8eb;
+
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --radius: 14px;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Work Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  background: #fafafa;
+}
+
+/* HEADER (title area centered like wireframe) */
+.site-header {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.25rem var(--pad) 1rem;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 .25rem;
+  font-size: .9rem;
+  color: var(--muted);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.place-title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+}
+
+.tagline {
+  margin: .5rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* PAGE WRAPPER */
+.page {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--pad) 1.25rem;
+}
+
+/* STAGE: mobile = stacked; desktop = hero with overlay cards */
+.stage {
+  display: grid;
+  gap: 1rem;
+}
+
+/* HERO */
+.hero {
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #ddd;
+  border: 1px solid var(--border);
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* CARDS */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+
+.section-title {
+  margin: 0 0 .75rem;
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.weather-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.weather-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Facts list styled like the wireframe "Label : Value" */
+.facts {
+  margin: 0;
+  display: grid;
+  gap: .5rem;
+}
+
+.facts > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .75rem;
+  align-items: baseline;
+}
+
+.facts dt {
+  margin: 0;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.facts dd {
+  margin: 0;
+  color: var(--muted);
+  text-align: right;
+}
+
+/* FOOTER (full width bar like wireframe) */
+.site-footer {
+  margin-top: 1.25rem;
+  padding: 1rem var(--pad);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--muted);
+  background: #fff;
+}
+
+.site-footer p {
+  margin: .25rem 0;
+}
+
+/* DESKTOP WIREFRAME: cards overlay on hero, left and right */
+@media (min-width: 700px) {
+  .stage {
+    position: relative;
+    grid-template-columns: 1fr;
+    gap: 0; /* hero becomes the stage backdrop */
+  }
+
+  .hero {
+    border-radius: var(--radius);
+    min-height: 420px;
+  }
+
+  /* place cards on top of hero */
+  .card {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: min(340px, 32%);
+    padding: 1.1rem;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(6px);
+  }
+
+  .data-card {
+    left: 1.25rem;
+  }
+
+  .weather-card {
+    right: 1.25rem;
+  }
+}
