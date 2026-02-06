@@ -1,0 +1,47 @@
+/* styles/temples-large.css */
+
+@media (min-width: 800px) {
+  .site-header {
+    padding: 18px 26px;
+  }
+
+  /* Hide hamburger, show horizontal nav */
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 38px;
+    align-items: center;
+  }
+
+  .nav-menu a {
+    font-size: 1.1rem;
+  }
+
+  .page {
+    padding: 26px 18px 40px;
+  }
+
+  h1 {
+    margin-top: 26px;
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+  }
+
+  /* 3-column grid like the screenshot */
+  .album {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px 38px;
+    align-items: start;
+    justify-items: center;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .temple-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
