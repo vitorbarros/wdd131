@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Review Submitted</title>
+  <meta name="description" content="Review submission confirmation page." />
+  <meta name="author" content="Vitor Monteiro de Barros" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Prata&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/form.css" />
+  <script src="scripts/review.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="title-bar">
+    <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+  </div>
+
+  <nav class="nav-bar" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="form.html">W05 Form</a>
+    <a href="temples.html">W03 Temples</a>
+    <a href="filtered-temples.html">W04 Filtered</a>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="form-shell">
+    <div class="form-head">
+      <p class="eyebrow">Thank You</p>
+      <h1 class="form-title">Review Submitted</h1>
+      <p class="form-subtitle">Your feedback helps us improve every product.</p>
+    </div>
+
+    <div class="confirmation">
+      <p class="confirmation-message">We appreciate your time and thoughtful feedback.</p>
+      <p class="confirmation-count">Total reviews submitted: <span id="reviewCount">0</span></p>
+      <a class="button-link" href="form.html">Submit another review</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="footer-line">
+    &copy; <span id="currentyear"></span> <span class="footer-name">Vitor Monteiro de Barros</span> <span class="dot">•</span> Brazil
+  </p>
+  <p class="lastmod">Last Modification: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>

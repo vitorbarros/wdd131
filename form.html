@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Review Form</title>
+  <meta name="description" content="WDD 131 product review form." />
+  <meta name="author" content="Vitor Monteiro de Barros" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Prata&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/form.css" />
+  <script src="scripts/form.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="title-bar">
+    <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+  </div>
+
+  <nav class="nav-bar" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="form.html" aria-current="page">W05 Form</a>
+    <a href="temples.html">W03 Temples</a>
+    <a href="filtered-temples.html">W04 Filtered</a>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="form-shell">
+    <div class="form-head">
+      <p class="eyebrow">W05 Assignment</p>
+      <h1 class="form-title">Product Review Form</h1>
+      <p class="form-subtitle">Share your experience. Fields marked with * are required.</p>
+    </div>
+
+    <form class="review-form" method="get" action="review.html">
+      <div class="form-row">
+        <label for="productName">Product Name *</label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+      </div>
+
+      <fieldset class="form-fieldset">
+        <legend>Overall Rating *</legend>
+        <div class="rating-group" role="radiogroup" aria-label="Overall rating">
+          <input type="radio" id="rating-1" name="overallRating" value="1" required />
+          <label for="rating-1" title="1 star">★☆☆☆☆</label>
+
+          <input type="radio" id="rating-2" name="overallRating" value="2" required />
+          <label for="rating-2" title="2 stars">★★☆☆☆</label>
+
+          <input type="radio" id="rating-3" name="overallRating" value="3" required />
+          <label for="rating-3" title="3 stars">★★★☆☆</label>
+
+          <input type="radio" id="rating-4" name="overallRating" value="4" required />
+          <label for="rating-4" title="4 stars">★★★★☆</label>
+
+          <input type="radio" id="rating-5" name="overallRating" value="5" required />
+          <label for="rating-5" title="5 stars">★★★★★</label>
+        </div>
+      </fieldset>
+
+      <div class="form-row">
+        <label for="installDate">Date of Installation *</label>
+        <input type="date" id="installDate" name="installDate" required />
+      </div>
+
+      <fieldset class="form-fieldset">
+        <legend>Useful Features (Check all that apply)</legend>
+        <div class="checkbox-grid">
+          <label class="checkbox">
+            <input type="checkbox" id="feature-setup" name="features" value="Easy setup" />
+            Easy setup
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" id="feature-durable" name="features" value="Durable build" />
+            Durable build
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" id="feature-efficient" name="features" value="Energy efficient" />
+            Energy efficient
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" id="feature-smart" name="features" value="Smart controls" />
+            Smart controls
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" id="feature-compact" name="features" value="Compact design" />
+            Compact design
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="form-row">
+        <label for="writtenReview">Written Review</label>
+        <textarea id="writtenReview" name="writtenReview" rows="5" placeholder="Tell us what stood out..."></textarea>
+      </div>
+
+      <div class="form-row">
+        <label for="userName">Your Name</label>
+        <input type="text" id="userName" name="userName" autocomplete="name" placeholder="Optional" />
+      </div>
+
+      <div class="form-actions">
+        <input type="submit" value="Submit Review" />
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="footer-line">
+    &copy; <span id="currentyear"></span> <span class="footer-name">Vitor Monteiro de Barros</span> <span class="dot">•</span> Brazil
+  </p>
+  <p class="lastmod">Last Modification: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
