@@ -142,9 +142,6 @@ textarea:focus {
   align-items: center;
   gap: 10px;
   font-weight: 500;
-}
-
-.checkbox label {
   cursor: pointer;
 }
 
