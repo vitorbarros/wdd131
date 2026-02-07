@@ -16,7 +16,7 @@
   <script src="scripts/form.js" defer></script>
   <script src="scripts/getdates.js" defer></script>
 </head>
-<body>
+<body class="form-page">
 <header class="site-header">
   <div class="title-bar">
     <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
@@ -74,26 +74,26 @@
       <fieldset class="form-fieldset">
         <legend>Useful Features (Check all that apply)</legend>
         <div class="checkbox-grid">
-          <label class="checkbox">
+          <div class="checkbox">
             <input type="checkbox" id="feature-setup" name="features" value="Easy setup" />
-            Easy setup
-          </label>
-          <label class="checkbox">
+            <label for="feature-setup">Easy setup</label>
+          </div>
+          <div class="checkbox">
             <input type="checkbox" id="feature-durable" name="features" value="Durable build" />
-            Durable build
-          </label>
-          <label class="checkbox">
+            <label for="feature-durable">Durable build</label>
+          </div>
+          <div class="checkbox">
             <input type="checkbox" id="feature-efficient" name="features" value="Energy efficient" />
-            Energy efficient
-          </label>
-          <label class="checkbox">
+            <label for="feature-efficient">Energy efficient</label>
+          </div>
+          <div class="checkbox">
             <input type="checkbox" id="feature-smart" name="features" value="Smart controls" />
-            Smart controls
-          </label>
-          <label class="checkbox">
+            <label for="feature-smart">Smart controls</label>
+          </div>
+          <div class="checkbox">
             <input type="checkbox" id="feature-compact" name="features" value="Compact design" />
-            Compact design
-          </label>
+            <label for="feature-compact">Compact design</label>
+          </div>
         </div>
       </fieldset>
 
