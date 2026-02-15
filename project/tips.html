@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitStart Blueprint | Tips & Habits</title>
+  <meta name="description" content="Practical beginner fitness tips on recovery, consistency, and safe training habits." />
+  <meta name="author" content="Vitor Monteiro de Barros" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/main.css" />
+  <script src="scripts/site.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">FS</span>
+    <div class="brand-text">
+      <p class="eyebrow">FitStart Blueprint</p>
+      <span class="brand-title">Beginner Fitness Made Simple</span>
+    </div>
+  </div>
+
+  <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+
+  <nav class="site-nav" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="planner.html">Workout Planner</a>
+    <a href="tips.html" aria-current="page">Tips & Habits</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div>
+      <p class="kicker">Tips & Habits</p>
+      <h1>Small habits create big results.</h1>
+      <p>
+        Build confidence with habits that protect your body and your motivation. These tips focus on consistency,
+        recovery, and sustainable progress.
+      </p>
+    </div>
+  </section>
+
+  <section class="tips-grid">
+    <article class="tip-card">
+      <h2>Consistency First</h2>
+      <p>Choose 3 workout days and protect them like appointments. Consistency matters more than intensity early on.</p>
+      <p class="tip-note">Tip: Pair workouts with a routine cue like morning coffee or lunch break.</p>
+    </article>
+    <article class="tip-card">
+      <h2>Recover to Improve</h2>
+      <p>Muscles grow during recovery. Sleep, hydration, and rest days help you return stronger.</p>
+      <p class="tip-note">Tip: Aim for 7-9 hours of sleep and at least one full rest day each week.</p>
+    </article>
+    <article class="tip-card">
+      <h2>Train Safely</h2>
+      <p>Start with light weights, focus on form, and increase loads slowly. Your joints will thank you.</p>
+      <p class="tip-note">Tip: If you cannot control the weight, it is too heavy for now.</p>
+    </article>
+  </section>
+
+  <section class="form-panel">
+    <div>
+      <h2>Weekly Check-In</h2>
+      <p>Use this short form to plan your next week. It helps you reflect and stay accountable.</p>
+    </div>
+
+    <form class="checkin-form" method="get" action="tips.html">
+      <div class="form-row">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" autocomplete="name" placeholder="Optional" />
+      </div>
+
+      <div class="form-row">
+        <label for="goal">Primary Goal *</label>
+        <select id="goal" name="goal" required>
+          <option value="" disabled selected>Select a goal</option>
+          <option value="strength">Build strength</option>
+          <option value="fatloss">Fat loss</option>
+          <option value="health">General health</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="days">Training Days per Week *</label>
+        <input type="number" id="days" name="days" min="1" max="6" required />
+      </div>
+
+      <div class="form-row">
+        <label for="note">Focus for This Week</label>
+        <textarea id="note" name="note" rows="4" placeholder="Example: focus on form or longer walks"></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button class="button primary" type="submit">Save Check-In</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div>
+    <p>&copy; <span id="currentyear"></span> FitStart Blueprint</p>
+    <p class="lastmod">Last updated: <span id="lastModified"></span></p>
+  </div>
+  <div class="footer-links">
+    <a href="references.html">References</a>
+  </div>
+</footer>
+</body>
+</html>

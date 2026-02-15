@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="Recovery icon">
+  <rect width="160" height="160" rx="28" fill="#f4b740"/>
+  <path d="M40 80c0-22 18-40 40-40s40 18 40 40-18 40-40 40-40-18-40-40Z" fill="#0b3d91" opacity="0.9"/>
+  <path d="M60 80c12-6 28-6 40 0" stroke="#f6f7fb" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="80" cy="72" r="8" fill="#f6f7fb"/>
+</svg>

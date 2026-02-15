@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-label="Abstract fitness illustration">
+  <rect width="900" height="600" fill="#0b3d91"/>
+  <circle cx="680" cy="140" r="90" fill="#f4b740"/>
+  <circle cx="170" cy="470" r="120" fill="#1f2937" opacity="0.6"/>
+  <path d="M140 210c110-140 360-140 470 0 70 90 70 210 0 300-110 140-360 140-470 0-70-90-70-210 0-300Z" fill="#f6f7fb" opacity="0.12"/>
+  <path d="M250 370h400" stroke="#f6f7fb" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="290" cy="370" r="40" fill="#f6f7fb"/>
+  <circle cx="610" cy="370" r="40" fill="#f6f7fb"/>
+  <path d="M420 210c20-40 60-40 80 0 20 40-10 110-40 140-30-30-60-100-40-140Z" fill="#f4b740"/>
+</svg>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitStart Blueprint | Workout Planner</title>
+  <meta name="description" content="Select a fitness goal and view a beginner-friendly weekly workout plan with simple guidance." />
+  <meta name="author" content="Vitor Monteiro de Barros" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/main.css" />
+  <script src="scripts/site.js" defer></script>
+  <script src="scripts/planner.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">FS</span>
+    <div class="brand-text">
+      <p class="eyebrow">FitStart Blueprint</p>
+      <span class="brand-title">Beginner Fitness Made Simple</span>
+    </div>
+  </div>
+
+  <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+
+  <nav class="site-nav" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="planner.html" aria-current="page">Workout Planner</a>
+    <a href="tips.html">Tips & Habits</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div>
+      <p class="kicker">Workout Planner</p>
+      <h1>Pick a goal and get a simple weekly plan.</h1>
+      <p>
+        Select one of the goals below to generate a beginner-friendly schedule. We will save your choice so you can return
+        to the same plan later.
+      </p>
+    </div>
+    <div class="planner-badge">
+      <p class="badge-title">Saved Goal</p>
+      <p id="savedGoal" class="badge-value">None yet</p>
+    </div>
+  </section>
+
+  <section class="planner-controls" aria-label="Workout goal selection">
+    <button class="chip" type="button" data-goal="strength">Build Strength</button>
+    <button class="chip" type="button" data-goal="fatloss">Fat Loss</button>
+    <button class="chip" type="button" data-goal="health">General Health</button>
+  </section>
+
+  <section class="planner-output" aria-live="polite">
+    <div class="output-header">
+      <h2 id="planTitle">Select a goal to see your plan.</h2>
+      <p id="planSummary">Your schedule will update instantly with workouts, recovery tips, and suggested duration.</p>
+    </div>
+    <div id="planCards" class="plan-grid"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div>
+    <p>&copy; <span id="currentyear"></span> FitStart Blueprint</p>
+    <p class="lastmod">Last updated: <span id="lastModified"></span></p>
+  </div>
+  <div class="footer-links">
+    <a href="references.html">References</a>
+  </div>
+</footer>
+</body>
+</html>

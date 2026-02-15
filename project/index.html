@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitStart Blueprint | Home</title>
+  <meta name="description" content="FitStart Blueprint helps beginners build a simple, consistent fitness routine with clear guidance and practical workouts." />
+  <meta name="author" content="Vitor Monteiro de Barros" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/main.css" />
+  <script src="scripts/site.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">FS</span>
+    <div class="brand-text">
+      <p class="eyebrow">FitStart Blueprint</p>
+      <span class="brand-title">Beginner Fitness Made Simple</span>
+    </div>
+  </div>
+
+  <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+
+  <nav class="site-nav" aria-label="Primary">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="planner.html">Workout Planner</a>
+    <a href="tips.html">Tips & Habits</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <p class="kicker">Start smart, stay consistent</p>
+      <h1>Build your first fitness routine with confidence.</h1>
+      <p>
+        FitStart Blueprint gives you the structure, language, and tools to train safely as a beginner. Choose a goal,
+        follow a simple plan, and keep momentum with supportive habits.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="planner.html">Find Your Workout</a>
+        <a class="button ghost" href="tips.html">Read the Tips</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="images/hero-illustration.svg" alt="Abstract fitness illustration" width="900" height="600" loading="lazy" />
+    </div>
+  </section>
+
+  <section class="goal-strip">
+    <h2>Pick a goal. We handle the structure.</h2>
+    <div class="goal-cards">
+      <article class="card">
+        <img src="images/icon-strength.svg" alt="Strength icon" width="160" height="160" loading="lazy" />
+        <h3>Build Strength</h3>
+        <p>Learn foundational lifts and full-body routines with progressive overload.</p>
+      </article>
+      <article class="card">
+        <img src="images/icon-cardio.svg" alt="Cardio icon" width="160" height="160" loading="lazy" />
+        <h3>Improve Endurance</h3>
+        <p>Boost your heart health with low-impact cardio and interval training.</p>
+      </article>
+      <article class="card">
+        <img src="images/icon-recovery.svg" alt="Recovery icon" width="160" height="160" loading="lazy" />
+        <h3>Stay Consistent</h3>
+        <p>Build habits, recover well, and keep workouts realistic for your schedule.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="highlight">
+    <div>
+      <h2>What makes this beginner-friendly?</h2>
+      <ul class="checklist">
+        <li>Clear weekly schedule with rest days baked in.</li>
+        <li>Shorter sessions that scale with your energy.</li>
+        <li>Actionable cues for form, breathing, and pacing.</li>
+        <li>Progress tracking without overwhelming metrics.</li>
+      </ul>
+    </div>
+    <div class="callout">
+      <h3>Save your goal</h3>
+      <p>Choose a workout goal on the planner page and we will remember it for next time.</p>
+      <a class="button primary" href="planner.html">Open Planner</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div>
+    <p>&copy; <span id="currentyear"></span> FitStart Blueprint</p>
+    <p class="lastmod">Last updated: <span id="lastModified"></span></p>
+  </div>
+  <div class="footer-links">
+    <a href="references.html">References</a>
+  </div>
+</footer>
+</body>
+</html>
